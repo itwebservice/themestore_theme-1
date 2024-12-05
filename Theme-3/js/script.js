@@ -1,32 +1,30 @@
 $(document).ready(function () {
-  // Room selection popover
-  $(".js-roomFilter").on("click", function () {
-    $(".js-room").toggleClass("showRoomSelection");
-  });
-  $(".closeRoomSelection").on("click", function () {
-    $(".js-room").toggleClass("showRoomSelection");
-  });
-
-  $(".cardSlider").owlCarousel({
-    items: 4,
-    nav: true,
-    dots: false,
-    margin: 24,
-    responsive: {
-      0: {
-        items: 1,
+  // ! Trending Tours slider
+  if ($(".js-trendingTours").length) {
+    $(".js-trendingTours").owlCarousel({
+      items: 4,
+      nav: true,
+      dots: false,
+      margin: 24,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        480: {
+          items: 2,
+        },
+        768: {
+          items: 3,
+        },
+        960: {
+          items: 4,
+        },
       },
-      480: {
-        items: 2,
-      },
-      768: {
-        items: 3,
-      },
-      960: {
-        items: 4,
-      },
-    },
-  });
+    });
+  }
 
   // ! Testimonial slider
   if ($(".js-testimonials").length) {
@@ -35,6 +33,9 @@ $(document).ready(function () {
       nav: true,
       dots: false,
       margin: 42,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
       responsive: {
         0: {
           items: 1,
@@ -124,10 +125,12 @@ $(document).ready(function () {
   }
 
   // Partner Slider
-  $(".cta-slider").owlCarousel({
-    items: 1,
-    dots: true,
-  });
+  if ($(".js-ctaSlider").length) {
+    $(".js-ctaSlider").owlCarousel({
+      items: 1,
+      dots: true,
+    });
+  }
 
   // --- Slick slider call
   if ($(".banner-slider-02").length) {
@@ -141,8 +144,20 @@ $(document).ready(function () {
       animateIn: "fadeIn",
     });
   }
+  if ($(".subMenus").length) {
+    $(".subMenus").hover(function () {
+      $(".dropdown-toggle", this).trigger("click");
+    });
+  }
 
-  // $(".subMenus").hover(function () {
-  //   $(".dropdown-toggle", this).trigger("click");
-  // });
+  // ! Gallery image grid
+  if ($(".imageGrid").length) {
+    $(".imageGrid").masonry({
+      // Options
+      itemSelector: ".imageGrid-item",
+      columnWidth: ".imageGrid-item",
+      percentPosition: true,
+      gutter: 30,
+    });
+  }
 });

@@ -13,18 +13,48 @@
 *      4.6 - Tags
 */
 
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("../fonts/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* -------------------------------------
       🍔 Components - Variables
   ------------------------------------- */
 $primary-color: #0a4069;
 $secondary-color: #378cac;
+
+$secondary-color-light: #85cfea;
 $white: #fff;
 $black: #000;
 $bg-color: #f3f6fd;
 $highlight-color: #e8f4ff;
 
 $primary-font: "Poppins", sans-serif;
-$secondary-font: "Oswald", sans-serif;
+$secondary-font: "Gilroy", sans-serif;
+$secondary-font-medium: "Gilroy-Medium", sans-serif;
+$secondary-font-semibold: "Gilroy-SemiBold", sans-serif;
+$secondary-font-bold: "Gilroy-Bold", sans-serif;
 
 /* -------------------------------------
       Reset Styles
@@ -68,7 +98,7 @@ body {
   ------------------------------------- */
 .c-header {
   position: absolute;
-  z-index: 2;
+  z-index: 12;
   top: 0;
   left: 0;
   width: 100%;
@@ -112,6 +142,7 @@ body {
 
           .subMenus {
             .dropdown-toggle {
+              outline: none;
               position: relative;
               top: 20px;
               &.show {
@@ -218,7 +249,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 4;
+  z-index: 14;
   .hambMenu {
     background-color: $white;
     border: 0;
@@ -328,10 +359,10 @@ body {
   .banner_one_text {
     color: $white;
     h1 {
-      font: 500 3rem/3.4rem $secondary-font;
+      font: 500 3rem/3.4rem $secondary-font-bold;
     }
     h3 {
-      font: 500 6rem/6.4rem $secondary-font;
+      font: 500 6rem/6.4rem $secondary-font-semibold;
     }
   }
 }
@@ -570,6 +601,9 @@ body {
   height: 32px;
   width: 32px;
   border-radius: 100px;
+  &.transparent {
+    background-color: transparent;
+  }
 }
 /* -------------------------------------
       🍔 Components - Section
@@ -587,8 +621,12 @@ body {
     position: relative;
     z-index: 2;
     .span {
-      font: 600 2.6rem/3rem $primary-font;
+      font: 300 2.6rem/3rem $secondary-font-bold;
       color: $primary-color;
+
+      &.type-2 {
+        font-weight: 300;
+      }
     }
     .image {
       background: url("../images/title-bg.png") left no-repeat;
@@ -629,9 +667,10 @@ body {
   &.ourTeam {
     background-image: url("../images/our-team-bg.png");
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: cover;
   }
   &.blogArticle {
+    background-color: $secondary-color-light;
     background-image: url("../images/blog-article-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -680,6 +719,24 @@ body {
       border-radius: 0 200px 200px 0;
     }
   }
+  &.top-destinations {
+    margin-bottom: 100px;
+    &::before {
+      position: absolute;
+      bottom: -40px;
+      left: 100px;
+      height: 100px;
+      width: 200px;
+      content: "";
+      background: url("../images/gallery-bg-2.png") center no-repeat;
+    }
+    .heading {
+      .span {
+        font: 300 3.2rem/3.4rem $secondary-font;
+        color: $secondary-color;
+      }
+    }
+  }
 }
 
 @media (max-width: 960px) {
@@ -720,7 +777,11 @@ body {
       🍔 Components - Slider
   ------------------------------------- */
 .c-slider {
+  z-index: 4;
   .owl-nav {
+    position: absolute;
+    top: -100px;
+    right: 0;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -733,13 +794,23 @@ body {
       display: grid;
       font-size: 1.4rem !important;
       line-height: 1.3rem;
-      height: 2rem;
+      height: 2.4rem;
       place-items: center;
-      width: 2rem;
+      width: 2.4rem;
       border-radius: 100px;
+      transition: all ease 0.3s;
       span {
+        font-size: 2rem;
+        line-height: 2rem;
         position: relative;
         top: -1px;
+      }
+
+      &.disabled {
+        background-color: $white !important;
+        color: #bbbbbb !important;
+        cursor: not-allowed;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3) !important;
       }
     }
   }
@@ -785,7 +856,7 @@ body {
 
 .partnerCardSlider {
   position: relative;
-  margin: 0 40px 2rem;
+  margin: 0 0 2rem;
   &::after {
     background-color: $primary-color;
     content: "";
@@ -827,14 +898,15 @@ body {
       }
     }
   }
-
-  .owl-nav {
-    position: absolute;
-    margin-top: 3rem;
-    width: 100%;
-  }
 }
 @media screen and (max-width: 768px) {
+  .c-slider {
+    .owl-nav {
+      position: relative;
+      top: auto;
+      right: auto;
+    }
+  }
   .partnerCardSlider {
     margin: 0;
 
@@ -983,7 +1055,8 @@ body {
       🍔 Components - Footer 
   ------------------------------------- */
 .c-footer {
-  background: $primary-color;
+  background: $primary-color url("../images/footer-bg.webp") no-repeat;
+  background-size: cover;
   border-radius: 60px 60px 0 0;
   .footer {
     &-top {
@@ -1032,7 +1105,7 @@ body {
   border-radius: 100px;
   &::after {
     content: "";
-    background-color: #85cfea;
+    background-color: $secondary-color-light;
     height: 60px;
     width: 60px;
     left: calc(50% - 30px);
@@ -1069,7 +1142,7 @@ body {
 .cta {
   position: relative;
   &-info {
-    background-color: #85cfea;
+    background-color: $secondary-color-light;
     position: relative;
     top: 90px;
     float: right;
@@ -1120,8 +1193,8 @@ body {
 .color-secondary {
   color: $secondary-color;
 }
-.bg-secondary {
-  background-color: $secondary-color;
+.bg-color-secondary {
+  background-color: $secondary-color !important;
 }
 .bg-primary {
   background-color: $primary-color;
@@ -1129,9 +1202,17 @@ body {
 .font-family-primary {
   font-family: $primary-font;
 }
-
 .font-family-secondary {
-  font-family: $secondary-font;
+  font-family: $secondary-font !important;
+}
+.font-family-secondary-medium {
+  font-family: $secondary-font-medium;
+}
+.font-family-secondary-semibold {
+  font-family: $secondary-font-semibold;
+}
+.font-family-secondary-bold {
+  font-family: $secondary-font-bold;
 }
 .mt-md-5 {
   margin-top: 2.4rem;
@@ -1145,4 +1226,58 @@ body {
   -webkit-line-clamp: 3; /* Limit to 3 lines */
   overflow: hidden; /* Hide overflowed content */
   text-overflow: ellipsis; /* Show ellipsis for truncated text */
+}
+
+/* ---- grid-item ---- */
+
+.imageGrid {
+  display: flex;
+  gap: 24px;
+  margin: 0 auto;
+  position: relative;
+  &-item {
+    cursor: pointer;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    width: 23%;
+    border-radius: 60px;
+
+    img {
+      display: block;
+      width: 100%;
+      border-radius: 60px;
+    }
+    &-info {
+      background-color: $primary-color;
+      display: grid;
+      place-items: center;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      z-index: 2;
+      transition: all ease 0.2s;
+      border-radius: 60px;
+    }
+
+    &:hover {
+      .imageGrid-item-info {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .imageGrid-item {
+    width: 48%;
+  }
+}
+@media (max-width: 480px) {
+  .imageGrid-item {
+    width: 100%;
+  }
 }
