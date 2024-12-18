@@ -54,42 +54,24 @@
 
             <!-- ***** Language change and login section ***** -->
             <div class="col-lg-6 col-md-6">
-              <ul class="sectionList text-end">
+              <ul
+                class="sectionList text-end d-flex align-items-center justify-content-end"
+              >
                 <li><a href="#!" class="link">Login</a></li>
                 <li>
-                  <div class="btn-group c-dropdown">
-                    <button
-                      type="button"
-                      class="btn dropdown-toggle btn-sm"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Country
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                    </ul>
+                  <div class="c-advanceSelect transparent">
+                    <select class="js-advanceSelect" name="state">
+                      <option value="IN">India</option>
+                      <option value="WY">Wyoming</option>
+                    </select>
                   </div>
                 </li>
                 <li>
-                  <div class="btn-group c-dropdown">
-                    <button
-                      type="button"
-                      class="btn dropdown-toggle btn-sm"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Currency
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                    </ul>
+                  <div class="c-advanceSelect transparent">
+                    <select class="js-advanceSelect" name="state">
+                      <option value="INR">INR</option>
+                      <option value="WY">Wyoming</option>
+                    </select>
                   </div>
                 </li>
               </ul>
@@ -182,38 +164,24 @@
           ></button>
         </div>
         <div class="offcanvas-body">
-          <div class="d-flex justify-content-around">
-            <div class="btn-group c-dropdown">
-              <button
-                type="button"
-                class="btn dropdown-toggle btn-sm"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Country
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Action</a></li>
-              </ul>
+          <div class="d-flex gap-3">
+            <div class="flex-grow-1 ps-3">
+              <span class="fs-8 d-block mb-1">Country:</span>
+              <div class="c-advanceSelect transparent">
+                <select class="js-advanceSelect" name="state">
+                  <option value="IN">India</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+              </div>
             </div>
-            <div class="btn-group c-dropdown">
-              <button
-                type="button"
-                class="btn dropdown-toggle btn-sm"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Currency
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Action</a></li>
-              </ul>
+            <div class="flex-grow-1 pe-3">
+              <span class="fs-8 d-block mb-1">Currency:</span>
+              <div class="c-advanceSelect transparent">
+                <select class="js-advanceSelect" name="state">
+                  <option value="INR">INR</option>
+                  <option value="USD">USD</option>
+                </select>
+              </div>
             </div>
           </div>
           <hr />
@@ -2263,11 +2231,11 @@
               </div>
               <div class="info">
                 <h3
-                  class="fs-3 mb-3 text-white fw-semibold font-family-secondary"
+                  class="fs-4 fs-md-3 mb-3 text-white fw-semibold font-family-secondary"
                 >
                   Dubai
                 </h3>
-                <span class="fs-6 text-white">
+                <span class="fs-7 fs-md-6 text-white">
                   Experience luxury, adventure, and culture in vibrant, iconic
                   Dubai
                 </span>
@@ -2288,11 +2256,11 @@
               </div>
               <div class="info">
                 <h3
-                  class="fs-3 mb-3 text-white fw-semibold font-family-secondary"
+                  class="fs-4 fs-md-3 mb-3 text-white fw-semibold font-family-secondary"
                 >
                   Singapore
                 </h3>
-                <span class="fs-6 text-white">
+                <span class="fs-7 fs-md-6 text-white">
                   Explore Singapore's vibrant culture, stunning landmarks, and
                   world-class attractions.
                 </span>
@@ -2313,11 +2281,11 @@
               </div>
               <div class="info">
                 <h3
-                  class="fs-3 mb-3 text-white fw-semibold font-family-secondary"
+                  class="fs-4 fs-md-3 mb-3 text-white fw-semibold font-family-secondary"
                 >
                   Europe
                 </h3>
-                <span class="fs-6 text-white">
+                <span class="fs-7 fs-md-6 text-white">
                   Experience Europe's rich history, diverse cultures, stunning
                   landmarks, and landscapes.
                 </span>
@@ -2338,11 +2306,11 @@
               </div>
               <div class="info">
                 <h3
-                  class="fs-3 mb-3 text-white fw-semibold font-family-secondary"
+                  class="fs-4 fs-md-3 mb-3 text-white fw-semibold font-family-secondary"
                 >
                   Thailand
                 </h3>
-                <span class="fs-6 text-white">
+                <span class="fs-7 fs-md-6 text-white">
                   Discover Thailand's rich culture, beautiful beaches, and
                   vibrant city life.
                 </span>
