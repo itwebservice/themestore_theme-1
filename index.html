@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Theme 1</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -41,6 +41,12 @@
                   </a>
                   <a href="#!" class="link"><i class="fab fa-instagram"></i></a>
                   <a href="#!" class="link"><i class="fab fa-linkedin"></i></a>
+                  <a href="#!" class="link"
+                    ><i class="fa-brands fa-whatsapp"></i
+                  ></a>
+                  <a href="#!" class="link"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
                 </li>
                 <li>
                   <a href="#!" class="link"><span>+011 234 567 89</span></a>
@@ -59,18 +65,24 @@
               >
                 <li><a href="#!" class="link">Login</a></li>
                 <li>
+                  <span class="d-block fs-8 text-white fw-medium"
+                    >Language</span
+                  >
                   <div class="c-advanceSelect transparent">
                     <select class="js-advanceSelect" name="state">
-                      <option value="IN">India</option>
-                      <option value="WY">Wyoming</option>
+                      <option value="EN">English</option>
+                      <option value="SP">Spanish</option>
                     </select>
                   </div>
                 </li>
                 <li>
+                  <span class="d-block fs-8 text-white fw-medium"
+                    >Currency</span
+                  >
                   <div class="c-advanceSelect transparent">
                     <select class="js-advanceSelect" name="state">
                       <option value="INR">INR</option>
-                      <option value="WY">Wyoming</option>
+                      <option value="SGD">SGD</option>
                     </select>
                   </div>
                 </li>
@@ -112,7 +124,45 @@
                   <a href="#" class="link">Transfer</a>
                 </li>
                 <li class="menuBar-item">
-                  <a href="#" class="link">Contact</a>
+                  <a href="#" class="link">Contact Us</a>
+                </li>
+                <li class="menuBar-item">
+                  <div class="dropdown subMenus">
+                    <button
+                      class="dropdown-toggle link"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Holidays
+                    </button>
+                    <div class="subMenu-wrapper">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a
+                            href="javascript:void(0)"
+                            class="link d-block p-0 pb-2 pt-2 text-secondary"
+                            >North-East trips</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="javascript:void(0)"
+                            class="link d-block p-0 pb-2 pt-2 text-secondary"
+                          >
+                            Kerala Vacation
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="javascript:void(0)"
+                            class="link d-block p-0 pb-2 pt-2 text-secondary"
+                            >Royal Rajasthan</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -166,11 +216,11 @@
         <div class="offcanvas-body">
           <div class="d-flex gap-3">
             <div class="flex-grow-1 ps-3">
-              <span class="fs-8 d-block mb-1">Country:</span>
+              <span class="fs-8 d-block mb-1">Language:</span>
               <div class="c-advanceSelect transparent">
                 <select class="js-advanceSelect" name="state">
-                  <option value="IN">India</option>
-                  <option value="WY">Wyoming</option>
+                  <option value="IN">English</option>
+                  <option value="WY">Spanish</option>
                 </select>
               </div>
             </div>
@@ -179,69 +229,97 @@
               <div class="c-advanceSelect transparent">
                 <select class="js-advanceSelect" name="state">
                   <option value="INR">INR</option>
-                  <option value="USD">USD</option>
+                  <option value="USD">SGD</option>
                 </select>
               </div>
             </div>
           </div>
           <hr />
+          <div
+            class="d-flex justify-content-center align-items-center gap-3 hstack"
+            style="height: 21px"
+          >
+            <a
+              href="#"
+              class="fs-5 link-underline link-underline-opacity-0 fw-medium text-secondary"
+            >
+              <i class="fab fa-facebook-square text-body-tertiary"></i>
+            </a>
+            <a
+              href="#"
+              class="fs-5 link-underline link-underline-opacity-0 fw-medium text-secondary"
+            >
+              <i class="fab fa-twitter-square text-body-tertiary"></i>
+            </a>
+            <a
+              href="#"
+              class="fs-5 link-underline link-underline-opacity-0 fw-medium text-secondary"
+            >
+              <i class="fab fa-instagram text-body-tertiary"></i>
+            </a>
+            <a
+              href="#"
+              class="fs-5 link-underline link-underline-opacity-0 fw-medium text-secondary"
+            >
+              <i class="fab fa-linkedin text-body-tertiary"></i>
+            </a>
+            <a
+              href="#"
+              class="fs-5 link-underline link-underline-opacity-0 fw-medium text-secondary"
+            >
+              <i class="fa-brands fa-whatsapp text-body-tertiary"></i>
+            </a>
+            <a
+              href="#"
+              class="fs-5 link-underline link-underline-opacity-0 fw-medium text-secondary"
+            >
+              <i class="fa-brands fa-youtube text-body-tertiary"></i>
+            </a>
+          </div>
+
+          <hr />
           <ul class="list-group list-group-flush">
             <a href="#" class="list-group-item list-group-item-action">
-              <i class="fa-solid fa-house me-2 text-body-tertiary"></i>
+              <i class="fa-solid fa-house me-2 text-body-tertiary fs-8"></i>
+              <span class="fs-7 fw-medium"> Home </span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i
+                class="fa-solid fa-umbrella-beach me-2 text-body-tertiary fs-8"
+              ></i>
               <span class="fs-7 fw-medium"> Holiday </span>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <i class="fa-solid fa-plane me-2 text-body-tertiary"></i>
+              <i class="fa-solid fa-plane me-2 text-body-tertiary fs-8"></i>
               <span class="fs-7 fw-medium"> Flight </span>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <i class="fa-solid fa-hotel me-2 text-body-tertiary"></i>
+              <i class="fa-solid fa-hotel me-2 text-body-tertiary fs-8"></i>
               <span class="fs-7 fw-medium"> Hotel </span>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <i class="fa-solid fa-car me-2 text-body-tertiary"></i>
+              <i class="fa-solid fa-car me-2 text-body-tertiary fs-8"></i>
               <span class="fs-7 fw-medium"> Transfer </span>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <i class="fa-solid fa-phone me-2 text-body-tertiary"></i>
-              <span class="fs-7 fw-medium"> Contact </span>
+              <i class="fa-solid fa-comments me-2 text-body-tertiary fs-8"></i>
+              <span class="fs-7 fw-medium"> Contact Us</span>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <i class="fa-solid fa-lock me-2 text-body-tertiary"></i>
+              <i class="fa-solid fa-lock me-2 text-body-tertiary fs-8"></i>
               <span class="fs-7 fw-medium"> Login </span>
             </a>
           </ul>
 
           <hr />
-
-          <div
-            class="d-flex justify-content-center align-items-center gap-4 hstack"
-            style="height: 21px"
-          >
-            <a
-              href="#"
-              class="fs-3 link-underline link-underline-opacity-0 fw-medium text-secondary"
+          <div class="d-flex flex-row g-2 p-2">
+            <span class="fs-8 fw-medium flex-grow-1 text-center"
+              ><i class="fa-solid fa-phone me-1"></i> +011 234 567 89</span
             >
-              <i class="fab fa-facebook-square color-primary"></i>
-            </a>
-            <a
-              href="#"
-              class="fs-3 link-underline link-underline-opacity-0 fw-medium text-secondary"
+            <span class="fs-8 fw-medium flex-grow-1 text-center"
+              ><i class="fa-solid fa-envelope me-1"></i>
+              contact@domain.com</span
             >
-              <i class="fab fa-twitter-square color-primary"></i>
-            </a>
-            <a
-              href="#"
-              class="fs-3 link-underline link-underline-opacity-0 fw-medium text-secondary"
-            >
-              <i class="fab fa-instagram color-primary"></i>
-            </a>
-            <a
-              href="#"
-              class="fs-3 link-underline link-underline-opacity-0 fw-medium text-secondary"
-            >
-              <i class="fab fa-linkedin color-primary"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -283,7 +361,7 @@
                       aria-selected="false"
                     >
                       <i class="fa-sharp fa-solid fa-plane-departure me-2"></i>
-                      <span class="fw-medium text-uppercase">Flight</span>
+                      <span class="fw-medium">Flight</span>
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -298,7 +376,7 @@
                       aria-selected="true"
                     >
                       <i class="fa-solid fa-hotel me-2"></i>
-                      <span class="fw-medium text-uppercase">Hotel</span>
+                      <span class="fw-medium">Hotel</span>
                     </button>
                   </li>
 
@@ -314,7 +392,7 @@
                       aria-selected="false"
                     >
                       <i class="fa-solid fa-users me-2"></i>
-                      <span class="fw-medium text-uppercase">Group Tour</span>
+                      <span class="fw-medium">Group Tour</span>
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -329,7 +407,7 @@
                       aria-selected="false"
                     >
                       <i class="fa-solid fa-umbrella-beach me-2"></i>
-                      <span class="fw-medium text-uppercase">Holiday</span>
+                      <span class="fw-medium">Holiday</span>
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -344,7 +422,7 @@
                       aria-selected="false"
                     >
                       <i class="fa-solid fa-sailboat me-2"></i>
-                      <span class="fw-medium text-uppercase">Activity</span>
+                      <span class="fw-medium">Activity</span>
                     </button>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -359,7 +437,7 @@
                       aria-selected="false"
                     >
                       <i class="fa-solid fa-car me-2"></i>
-                      <span class="fw-medium text-uppercase">Transfer</span>
+                      <span class="fw-medium">Transfer</span>
                     </button>
                   </li>
                 </ul>
@@ -1270,9 +1348,7 @@
                     class="card-img-top"
                     alt="..."
                   />
-                  <span class="title fs-8 text-uppercase fw-medium">
-                    Domestic
-                  </span>
+                  <span class="title fs-8 fw-medium"> Domestic </span>
                   <div class="discount">
                     <i class="fa-solid fa-tags fs-5 text-success"></i>
                   </div>
@@ -1305,9 +1381,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -1322,9 +1396,7 @@
                     class="card-img-top"
                     alt="..."
                   />
-                  <span class="title fs-8 text-uppercase fw-medium">
-                    Domestic
-                  </span>
+                  <span class="title fs-8 fw-medium"> Domestic </span>
                   <div class="discount">
                     <i class="fa-solid fa-tags fs-5 text-success"></i>
                   </div>
@@ -1357,9 +1429,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -1374,9 +1444,7 @@
                     class="card-img-top"
                     alt="..."
                   />
-                  <span class="title fs-8 text-uppercase fw-medium">
-                    Domestic
-                  </span>
+                  <span class="title fs-8 fw-medium"> Domestic </span>
                   <div class="discount">
                     <i class="fa-solid fa-tags fs-5 text-success"></i>
                   </div>
@@ -1409,9 +1477,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -1426,9 +1492,7 @@
                     class="card-img-top"
                     alt="..."
                   />
-                  <span class="title fs-8 text-uppercase fw-medium">
-                    Domestic
-                  </span>
+                  <span class="title fs-8 fw-medium"> Domestic </span>
                   <div class="discount">
                     <i class="fa-solid fa-tags fs-5 text-success"></i>
                   </div>
@@ -1461,9 +1525,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -1478,9 +1540,7 @@
                     class="card-img-top"
                     alt="..."
                   />
-                  <span class="title fs-8 text-uppercase fw-medium">
-                    Domestic
-                  </span>
+                  <span class="title fs-8 fw-medium"> Domestic </span>
                   <div class="discount">
                     <i class="fa-solid fa-tags fs-5 text-success"></i>
                   </div>
@@ -1513,9 +1573,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -1544,9 +1602,7 @@
                     class="card-img-top"
                     alt="..."
                   />
-                  <span class="title fs-8 text-uppercase fw-medium">
-                    Beach View
-                  </span>
+                  <span class="title fs-8 fw-medium"> Beach View </span>
                   <div class="discount">
                     <i class="fa-solid fa-tags fs-5 text-success"></i>
                   </div>
@@ -1579,9 +1635,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -1596,9 +1650,7 @@
                     class="card-img-top"
                     alt="..."
                   />
-                  <span class="title fs-8 text-uppercase fw-medium">
-                    Beach View
-                  </span>
+                  <span class="title fs-8 fw-medium"> Beach View </span>
                   <div class="discount">
                     <i class="fa-solid fa-tags fs-5 text-success"></i>
                   </div>
@@ -1631,9 +1683,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -1648,9 +1698,7 @@
                     class="card-img-top"
                     alt="..."
                   />
-                  <span class="title fs-8 text-uppercase fw-medium">
-                    Beach View
-                  </span>
+                  <span class="title fs-8 fw-medium"> Beach View </span>
                   <div class="discount">
                     <i class="fa-solid fa-tags fs-5 text-success"></i>
                   </div>
@@ -1683,9 +1731,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -1700,9 +1746,7 @@
                     class="card-img-top"
                     alt="..."
                   />
-                  <span class="title fs-8 text-uppercase fw-medium">
-                    Beach View
-                  </span>
+                  <span class="title fs-8 fw-medium"> Beach View </span>
                   <div class="discount">
                     <i class="fa-solid fa-tags fs-5 text-success"></i>
                   </div>
@@ -1735,9 +1779,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -1752,9 +1794,7 @@
                     class="card-img-top"
                     alt="..."
                   />
-                  <span class="title fs-8 text-uppercase fw-medium">
-                    Beach View
-                  </span>
+                  <span class="title fs-8 fw-medium"> Beach View </span>
                   <div class="discount">
                     <i class="fa-solid fa-tags fs-5 text-success"></i>
                   </div>
@@ -1787,9 +1827,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -1951,24 +1989,17 @@
                 </div>
                 <div class="card-body">
                   <h6
-                    class="card-title fw-5 fw-bold mb-1 color-primary font-family-secondary"
+                    class="card-title fw-5 fw-bold mb-2 color-primary font-family-secondary"
                   >
                     Goa Tour Package In Summer
                   </h6>
-                  <div class="d-flex flex-row mb-3 gap-2">
-                    <div class="flex-grow-1">
-                      <span class="fs-8 fw-medium text-secondary">
-                        <i class="fa-solid fa-calendar-days me-1"></i>
-                        16-12-2024 To 20-12-2024
-                      </span>
-                    </div>
-                    <div class="flex-grow-1 text-end">
-                      <span class="fs-8 fw-medium text-secondary">
-                        <i class="fa-regular fa-clock me-1"></i> 3 Nights, 4
-                        Days
-                      </span>
-                    </div>
-                  </div>
+                  <span class="fs-8 fw-medium text-secondary d-block mb-2">
+                    <i class="fa-solid fa-calendar-days me-1"></i>
+                    16-12-2024 To 20-12-2024
+                  </span>
+                  <span class="fs-8 fw-medium text-secondary d-block mb-3">
+                    <i class="fa-regular fa-clock me-1"></i> 3 Nights, 4 Days
+                  </span>
 
                   <div class="d-block mb-2">
                     <span class="fs-8 fw-bolder text-secondary d-block mb-1">
@@ -1979,9 +2010,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -2005,24 +2034,17 @@
                 </div>
                 <div class="card-body">
                   <h6
-                    class="card-title fw-5 fw-bold mb-1 color-primary font-family-secondary"
+                    class="card-title fw-5 fw-bold mb-2 color-primary font-family-secondary"
                   >
                     Charismatic Kochi Tour Package
                   </h6>
-                  <div class="d-flex flex-row mb-3 gap-2">
-                    <div class="flex-grow-1">
-                      <span class="fs-8 fw-medium text-secondary">
-                        <i class="fa-solid fa-calendar-days me-1"></i>
-                        16-12-2024 To 20-12-2024
-                      </span>
-                    </div>
-                    <div class="flex-grow-1 text-end">
-                      <span class="fs-8 fw-medium text-secondary">
-                        <i class="fa-regular fa-clock me-1"></i> 3 Nights, 4
-                        Days
-                      </span>
-                    </div>
-                  </div>
+                  <span class="fs-8 fw-medium text-secondary d-block mb-2">
+                    <i class="fa-solid fa-calendar-days me-1"></i>
+                    16-12-2024 To 20-12-2024
+                  </span>
+                  <span class="fs-8 fw-medium text-secondary d-block mb-3">
+                    <i class="fa-regular fa-clock me-1"></i> 3 Nights, 4 Days
+                  </span>
 
                   <div class="d-block mb-2">
                     <span class="fs-8 fw-bolder text-secondary d-block mb-1">
@@ -2033,9 +2055,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -2059,24 +2079,17 @@
                 </div>
                 <div class="card-body">
                   <h6
-                    class="card-title fw-5 fw-bold mb-1 color-primary font-family-secondary"
+                    class="card-title fw-5 fw-bold mb-2 color-primary font-family-secondary"
                   >
                     Goa Tour Package In Summer
                   </h6>
-                  <div class="d-flex flex-row mb-3 gap-2">
-                    <div class="flex-grow-1">
-                      <span class="fs-8 fw-medium text-secondary">
-                        <i class="fa-solid fa-calendar-days me-1"></i>
-                        16-12-2024 To 20-12-2024
-                      </span>
-                    </div>
-                    <div class="flex-grow-1 text-end">
-                      <span class="fs-8 fw-medium text-secondary">
-                        <i class="fa-regular fa-clock me-1"></i> 3 Nights, 4
-                        Days
-                      </span>
-                    </div>
-                  </div>
+                  <span class="fs-8 fw-medium text-secondary d-block mb-2">
+                    <i class="fa-solid fa-calendar-days me-1"></i>
+                    16-12-2024 To 20-12-2024
+                  </span>
+                  <span class="fs-8 fw-medium text-secondary d-block mb-3">
+                    <i class="fa-regular fa-clock me-1"></i> 3 Nights, 4 Days
+                  </span>
 
                   <div class="d-block mb-2">
                     <span class="fs-8 fw-bolder text-secondary d-block mb-1">
@@ -2087,9 +2100,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -2113,24 +2124,17 @@
                 </div>
                 <div class="card-body">
                   <h6
-                    class="card-title fw-5 fw-bold mb-1 color-primary font-family-secondary"
+                    class="card-title fw-5 fw-bold mb-2 color-primary font-family-secondary"
                   >
                     Charismatic Kochi Tour Package
                   </h6>
-                  <div class="d-flex flex-row mb-3 gap-2">
-                    <div class="flex-grow-1">
-                      <span class="fs-8 fw-medium text-secondary">
-                        <i class="fa-solid fa-calendar-days me-1"></i>
-                        16-12-2024 To 20-12-2024
-                      </span>
-                    </div>
-                    <div class="flex-grow-1 text-end">
-                      <span class="fs-8 fw-medium text-secondary">
-                        <i class="fa-regular fa-clock me-1"></i> 3 Nights, 4
-                        Days
-                      </span>
-                    </div>
-                  </div>
+                  <span class="fs-8 fw-medium text-secondary d-block mb-2">
+                    <i class="fa-solid fa-calendar-days me-1"></i>
+                    16-12-2024 To 20-12-2024
+                  </span>
+                  <span class="fs-8 fw-medium text-secondary d-block mb-3">
+                    <i class="fa-regular fa-clock me-1"></i> 3 Nights, 4 Days
+                  </span>
 
                   <div class="d-block mb-2">
                     <span class="fs-8 fw-bolder text-secondary d-block mb-1">
@@ -2141,9 +2145,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -2167,24 +2169,17 @@
                 </div>
                 <div class="card-body">
                   <h6
-                    class="card-title fw-5 fw-bold mb-1 color-primary font-family-secondary"
+                    class="card-title fw-5 fw-bold mb-2 color-primary font-family-secondary"
                   >
                     Goa Tour Package In Summer
                   </h6>
-                  <div class="d-flex flex-row mb-3 gap-2">
-                    <div class="flex-grow-1">
-                      <span class="fs-8 fw-medium text-secondary">
-                        <i class="fa-solid fa-calendar-days me-1"></i>
-                        16-12-2024 To 20-12-2024
-                      </span>
-                    </div>
-                    <div class="flex-grow-1 text-end">
-                      <span class="fs-8 fw-medium text-secondary">
-                        <i class="fa-regular fa-clock me-1"></i> 3 Nights, 4
-                        Days
-                      </span>
-                    </div>
-                  </div>
+                  <span class="fs-8 fw-medium text-secondary d-block mb-2">
+                    <i class="fa-solid fa-calendar-days me-1"></i>
+                    16-12-2024 To 20-12-2024
+                  </span>
+                  <span class="fs-8 fw-medium text-secondary d-block mb-3">
+                    <i class="fa-regular fa-clock me-1"></i> 3 Nights, 4 Days
+                  </span>
 
                   <div class="d-block mb-2">
                     <span class="fs-8 fw-bolder text-secondary d-block mb-1">
@@ -2195,9 +2190,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -2215,7 +2208,7 @@
       <div class="container-lg">
         <div class="row align-items-center">
           <div class="col-12">
-            <h3 class="heading">Popular destinations</h3>
+            <h3 class="heading">Popular Destinations</h3>
           </div>
         </div>
         <div class="row alterNateCards">
@@ -2224,6 +2217,7 @@
             <div class="imageCard mb-3 mb-md-0">
               <img src="./images/destination-card-2.png" alt="'offer" />
               <div class="rating">
+                <span class="fs-7 text-secondary fw-semibold">Rating</span>
                 <i
                   class="fa-sharp fa-solid fa-star color-primary fs-7 me-1"
                 ></i>
@@ -2249,6 +2243,7 @@
             <div class="imageCard mt-0 mt-md-5 mb-3 mb-md-0">
               <img src="./images/destination-card-1.png" alt="'offer" />
               <div class="rating">
+                <span class="fs-7 text-secondary fw-semibold">Rating</span>
                 <i
                   class="fa-sharp fa-solid fa-star color-primary fs-7 me-1"
                 ></i>
@@ -2274,6 +2269,7 @@
             <div class="imageCard mb-3 mb-md-0">
               <img src="./images/destination-card-2.png" alt="'offer" />
               <div class="rating">
+                <span class="fs-7 text-secondary fw-semibold">Rating</span>
                 <i
                   class="fa-sharp fa-solid fa-star color-primary fs-7 me-1"
                 ></i>
@@ -2299,6 +2295,7 @@
             <div class="imageCard mt-0 mt-md-5 mb-3 mb-md-0">
               <img src="./images/destination-card-1.png" alt="'offer" />
               <div class="rating">
+                <span class="fs-7 text-secondary fw-semibold">Rating</span>
                 <i
                   class="fa-sharp fa-solid fa-star color-primary fs-7 me-1"
                 ></i>
@@ -2361,9 +2358,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -2400,9 +2395,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -2439,9 +2432,7 @@
                       <sup class="fs-6 text-secondary">*</sup>
                     </span>
                   </div>
-                  <button
-                    class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                  >
+                  <button class="c-button btn small sm fw-medium fs-8">
                     View More
                   </button>
                 </div>
@@ -2553,7 +2544,7 @@
                     Travel
                   </span>
                   <span class="d-inline fs-8 color-primary me-3 fw-medium">
-                    Admin
+                    By: Author name
                   </span>
                   <span
                     class="d-inline fs-8 text-body-tertiary fw-medium text-end flex-grow-1"
@@ -2565,14 +2556,8 @@
                   There are many variations of passages available but
                 </h5>
 
-                <a
-                  href="#"
-                  class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                >
-                  READ MORE
-                  <i
-                    class="fa-solid fa-right-long color-secondary fs-6 ms-1"
-                  ></i>
+                <a href="#" class="c-button btn small sm fw-medium fs-8">
+                  Read More
                 </a>
               </div>
             </div>
@@ -2591,7 +2576,7 @@
                     Travel
                   </span>
                   <span class="d-inline fs-8 color-primary me-3 fw-medium">
-                    Admin
+                    By: Author name
                   </span>
                   <span
                     class="d-inline fs-8 text-body-tertiary fw-medium text-end flex-grow-1"
@@ -2603,14 +2588,8 @@
                   There are many variations of passages available but
                 </h5>
 
-                <a
-                  href="#"
-                  class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                >
-                  READ MORE
-                  <i
-                    class="fa-solid fa-right-long color-secondary fs-6 ms-1"
-                  ></i>
+                <a href="#" class="c-button btn small sm fw-medium fs-8">
+                  Read More
                 </a>
               </div>
             </div>
@@ -2629,7 +2608,7 @@
                     Travel
                   </span>
                   <span class="d-inline fs-8 color-primary me-3 fw-medium">
-                    Admin
+                    By: Author name
                   </span>
                   <span
                     class="d-inline fs-8 text-body-tertiary fw-medium text-end flex-grow-1"
@@ -2641,14 +2620,8 @@
                   There are many variations of passages available but
                 </h5>
 
-                <a
-                  href="#"
-                  class="c-button btn is-link fw-bolder text-uppercase fs-8 color-secondary link-underline-primary"
-                >
-                  READ MORE
-                  <i
-                    class="fa-solid fa-right-long color-secondary fs-6 ms-1"
-                  ></i>
+                <a href="#" class="c-button btn small sm fw-medium fs-8">
+                  Read More
                 </a>
               </div>
             </div>
@@ -2716,15 +2689,22 @@
                   <span class="fs-7 fw-medium d-block text-secondary">
                     Call 24/7 for any help
                   </span>
-                  <span class="fs-5 color-primary d-block fw-medium mb-3">
-                    +91 123 456 789
-                  </span>
+                  <a
+                    href="#"
+                    class="fs-5 color-primary d-block fw-medium mb-3 text-decoration-none"
+                  >
+                    <i class="fa-solid fa-phone me-2 fs-6"></i> +91 123 456 789
+                  </a>
                   <span class="fs-7 fw-medium d-block text-secondary">
                     Mail to our support team
                   </span>
-                  <span class="fs-5 color-primary d-block fw-medium mb-2">
+                  <a
+                    href="mailTo:support@domain.com"
+                    class="fs-5 color-primary d-block fw-medium mb-2 text-decoration-none"
+                  >
+                    <i class="fa-solid fa-envelope me-2 fs-6"></i>
                     support@domain.com
-                  </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -2750,7 +2730,7 @@
                     href="#"
                     class="text-decoration-none d-block fs-6 mb-2 text-secondary"
                   >
-                    work with us
+                    Work with us
                   </a>
                   <a
                     href="#"
@@ -3004,9 +2984,7 @@
           </div>
           <div class="modal-body">
             <div class="mb-3">
-              <span class="fs-7 fw-medium d-block text-uppercase"
-                >Adults (12y +)</span
-              >
+              <span class="fs-7 fw-medium d-block">Adults (12y +)</span>
               <span class="fs-7 fw-medium text-secondary d-block mb-2"
                 >On the day of travel</span
               >
@@ -3019,9 +2997,7 @@
               />
             </div>
             <div class="mb-3">
-              <span class="fs-7 fw-medium d-block text-uppercase"
-                >CHILDREN (2y - 12y)</span
-              >
+              <span class="fs-7 fw-medium d-blocke">Children (2y - 12y)</span>
               <span class="fs-7 fw-medium text-secondary d-block mb-2"
                 >On the day of travel</span
               >
@@ -3034,9 +3010,7 @@
               />
             </div>
             <div class="mb-3">
-              <span class="fs-7 fw-medium d-block text-uppercase"
-                >INFANTS (below 2y)</span
-              >
+              <span class="fs-7 fw-medium d-block">Infants (below 2y)</span>
               <span class="fs-7 fw-medium text-secondary d-block mb-2"
                 >On the day of travel</span
               >
@@ -3049,9 +3023,7 @@
               />
             </div>
 
-            <span class="fs-7 fw-medium d-block text-uppercase"
-              >CHOOSE TRAVEL CLASS
-            </span>
+            <span class="fs-7 fw-medium d-block">Choose Travel Class </span>
             <div class="d-flex flex-row mb-3">
               <div class="form-check flex-fill">
                 <input
@@ -3120,9 +3092,7 @@
           </div>
           <div class="modal-body">
             <div class="mb-3">
-              <span class="fs-7 fw-medium d-block text-uppercase"
-                >Adults (12y +)</span
-              >
+              <span class="fs-7 fw-medium d-block">Adults (12y +)</span>
               <span class="fs-7 fw-medium text-secondary d-block mb-2"
                 >On the day of travel</span
               >
@@ -3135,9 +3105,7 @@
               />
             </div>
             <div class="mb-3">
-              <span class="fs-7 fw-medium d-block text-uppercase"
-                >CHILDREN (2y - 12y)</span
-              >
+              <span class="fs-7 fw-medium d-block">Children (2y - 12y)</span>
               <span class="fs-7 fw-medium text-secondary d-block mb-2"
                 >On the day of travel</span
               >
@@ -3150,9 +3118,7 @@
               />
             </div>
             <div class="mb-3">
-              <span class="fs-7 fw-medium d-block text-uppercase"
-                >INFANTS (below 2y)</span
-              >
+              <span class="fs-7 fw-medium d-block">Infants (below 2y)</span>
               <span class="fs-7 fw-medium text-secondary d-block mb-2"
                 >On the day of travel</span
               >
