@@ -57,6 +57,10 @@ body {
   font: 600 0.75rem/1rem "Raleway", sans-serif !important;
   padding-left: 10px !important;
 }
+.c-header .header-secondary .dropdown-menu.show {
+  left: auto;
+  right: 0;
+}
 .c-header .header-secondary .navbar-expand-md {
   flex-wrap: nowrap;
   justify-content: flex-start;

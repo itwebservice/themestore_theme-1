@@ -71,6 +71,10 @@ body {
           font: 600 0.75rem/1rem $secondary-font !important;
           padding-left: 10px !important;
         }
+        &.show {
+          left: auto;
+          right: 0;
+        }
       }
       .navbar-expand-md {
         flex-wrap: nowrap;
