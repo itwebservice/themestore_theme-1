@@ -585,6 +585,13 @@ body {
           transform: scale(1.2);
         }
       }
+
+      .overlayRating {
+        top: 8px;
+        right: 8px;
+        position: absolute;
+        z-index: 2;
+      }
       &::before {
         background: linear-gradient(
           to bottom,
