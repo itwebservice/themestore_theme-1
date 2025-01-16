@@ -1,6 +1,7 @@
 /* -------------------------------------
       🍔 Components - Variables
   ------------------------------------- */
+@use "sass:color";
 $primary-color: #d67f76;
 $secondary-color: #1f4ca7;
 
@@ -8,7 +9,7 @@ $white: #fff;
 $black: #000;
 
 $bg-color: #f3f6fd;
-$highlight-color: lighten($primary-color, 30%);
+$highlight-color: color.adjust($primary-color, $lightness: 30%);
 
 $primary-font: "Inter", sans-serif;
 $secondary-font: "Raleway", sans-serif;
@@ -315,7 +316,7 @@ body {
 
 .roomFilter {
   align-items: center;
-  border: 1px solid darken($highlight-color, 12%);
+  border: 1px solid color.adjust($highlight-color, $lightness: -12%);
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -328,12 +329,12 @@ body {
     padding: 0 4px;
   }
   i {
-    color: darken($highlight-color, 20%);
+    color: color.adjust($highlight-color, $lightness: -20%);
   }
 }
 .c-select {
   background-color: transparent;
-  border: 1px solid darken($highlight-color, 12%);
+  border: 1px solid color.adjust($highlight-color, $lightness: -12%);
   height: 42px;
   outline: none;
   width: 100%;
@@ -357,7 +358,7 @@ body {
   padding: 6px;
   border-radius: 4px;
   &.transparent {
-    border: 1px solid darken($highlight-color, 12%);
+    border: 1px solid color.adjust($highlight-color, $lightness: -12%);
     background-color: transparent;
   }
 }
@@ -380,12 +381,12 @@ body {
   &.transparent {
     .select2-container {
       .select2-selection {
-        border-color: darken($highlight-color, 10%);
+        border-color: color.adjust($highlight-color, $lightness: -10%);
         background-color: transparent;
         .select2-selection__arrow {
           b {
-            border-color: darken($highlight-color, 15%) transparent transparent
-              transparent;
+            border-color: color.adjust($highlight-color, $lightness: -15%)
+              transparent transparent transparent;
           }
         }
       }
@@ -395,7 +396,7 @@ body {
 
 .c-calendar {
   background-color: transparent;
-  border: 1px solid darken($highlight-color, 12%);
+  border: 1px solid color.adjust($highlight-color, $lightness: -12%);
   height: 42px;
   border-radius: 4px;
   .form-control {
@@ -412,7 +413,7 @@ body {
 
   &.transparent {
     .input-group-addon {
-      color: darken($highlight-color, 20%);
+      color: color.adjust($highlight-color, $lightness: -20%);
     }
   }
 }
@@ -441,7 +442,7 @@ body {
   color: $white !important;
   font-size: 0.85rem;
   &:hover {
-    background-color: darken($primary-color, 5%);
+    background-color: color.adjust($primary-color, $lightness: -5%);
   }
 
   &.is-link {
